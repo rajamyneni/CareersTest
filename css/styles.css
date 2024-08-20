@@ -1,0 +1,330 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+    color: #333333;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003366;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button {
+    background-color: #FF6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 80px; /* Add space from the right side */
+}
+
+
+.cta-button:hover {
+    background-color: #E55A00;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.values-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.value-item {
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.value-item img {
+    width: 100%; /* Adjusts the image to the width of the container */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 150px; /* Limits the maximum width of the image */
+    display: block;
+    margin: 0 auto 10px; /* Centers the image and adds some margin */
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+#benefits {
+    margin-top: 60px; /* Pushes the text down to avoid overlapping */
+    padding: 20px;
+}
+.benefit-item img {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Adjust as needed */
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+}
+.benefits-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.benefit-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.benefit-text {
+    flex: 1; /* Ensures the text takes up the remaining space */
+}
+
+.benefit-text h3 {
+    margin: 0;
+}
+
+.benefit-text p {
+    margin-top: 5px;
+}
+#jobs {
+    margin-top: 60px; /* Adjust this value as needed */
+    padding: 20px;
+}
+/* Hero Section */
+.hero-small {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 60px; /* Pushes content down if banner overlaps */
+}
+
+.hero-small img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-small .hero-text {
+    position: absolute;
+    top: 500%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Filter Bar */
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 20px 0; /* Add top margin to push the filter bar down */
+}
+
+
+.filter-bar button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter-bar button:hover {
+    background-color: #FF6600;
+}
+
+/* Job Listings */
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.job-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.job-card h3 {
+    margin-top: 0;
+}
+
+.job-card p {
+    margin: 5px 0;
+}
+
+.job-card .cta-button {
+    display: inline-block;
+    margin-top: 10px;
+}
+#stories {
+    margin-top: 60px; /* Pushes the content down */
+    padding: 20px;
+}
+.stories-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.story-item {
+    text-align: center; /* Center align text and image */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.story-item img {
+    width: 80px; /* Smaller image size */
+    height: 80px;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.story-item h3 {
+    margin-top: 0;
+}
+
+.story-item p {
+    margin-top: 5px;
+}
+#apply {
+    margin: 60px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#apply h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #FF6600;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #E55A00;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-left: 80px; /* Move the button slightly to the right */
+}
