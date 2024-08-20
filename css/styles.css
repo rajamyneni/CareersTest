@@ -328,3 +328,40 @@ form button:hover {
     margin-top: 5px;
     margin-left: 80px; /* Move the button slightly to the right */
 }
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        font-size: 1.2em;
+    }
+
+    .values-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value-item {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust Navigation */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+}
