@@ -347,6 +347,7 @@ form button:hover {
 .hero-small img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .hero-small .hero-text {
