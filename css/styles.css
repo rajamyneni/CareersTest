@@ -19,23 +19,20 @@ nav {
     top: 0;
     z-index: 1000;
 }
+
 .logo {
     background-color: white; /* Set the background color to white */
-    padding: 10px; /* Optional: Add some padding to the logo */
-    border-radius: 5px; /* Optional: Add rounded corners */
+    padding: 10px; /* Add some padding to the logo */
+    border-radius: 5px; /* Add rounded corners */
     display: inline-block; /* Ensures the background only covers the logo */
 }
 
 .logo img {
-    display: block;
-    width: auto;
-    height: auto;
-}
-
-.logo img {
     height: 50px;
+    display: block;
 }
 
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
@@ -52,6 +49,7 @@ nav {
     font-weight: bold;
 }
 
+/* CTA Button in Nav */
 .cta-button {
     background-color: #FF6600;
     color: white;
@@ -80,7 +78,7 @@ nav {
 
 .hero-text {
     position: absolute;
-    top: 40%;
+    top: 40%; /* Adjusted to match your request */
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -98,6 +96,7 @@ nav {
     margin-top: 10px;
 }
 
+/* Values Section */
 .values-grid {
     display: flex;
     justify-content: space-around;
@@ -127,21 +126,13 @@ footer {
     max-width: 150px; /* Limits the maximum width of the image */
     display: block;
     margin: 0 auto 10px; /* Centers the image and adds some margin */
-    border-radius: 8px; /* Optional: adds rounded corners */
+    border-radius: 8px; /* Adds rounded corners */
 }
 
+/* Benefits Section */
 #benefits {
     margin-top: 50px; /* Pushes the text down to avoid overlapping */
-    padding: 00px;
-}
-
-.benefit-item img {
-    width: 100%;
-    height: auto;
-    max-width: 150px; /* Adjust as needed */
-    display: block;
-    margin: 0 auto 10px;
-    border-radius: 8px;
+    padding: 20px; /* Add padding if needed */
 }
 
 .benefits-grid {
@@ -151,7 +142,7 @@ footer {
 }
 
 .benefit-item {
-    width: 40%; /* Keep the increased size */
+    width: 40%; /* Adjust the width of each benefit item */
     margin: 20px;
     padding: 20px;
     background-color: white;
@@ -167,14 +158,13 @@ footer {
     margin-left: auto; /* Pushes the boxes to the right */
 }
 
-
 .benefit-item img {
-    width: 100%; /* Adjusts the image to the width of the container */
-    height: auto; /* Maintains aspect ratio */
-    max-width: 150px; /* Limits the maximum width of the image */
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Adjust as needed */
     display: block;
-    margin: 0 auto 10px; /* Centers the image and adds some margin */
-    border-radius: 8px; /* Optional: adds rounded corners */
+    margin: 0 auto 10px;
+    border-radius: 8px;
 }
 
 .benefit-text {
@@ -189,66 +179,12 @@ footer {
     margin-top: 5px;
 }
 
+/* Jobs Section */
 #jobs {
     margin-top: 60px; /* Adjust this value as needed */
     padding: 20px;
 }
 
-/* Hero Section */
-.hero-small {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin-top: 60px; /* Pushes content down to avoid overlap with the navbar */
-}
-
-.hero-small img {
-    width: 100%;
-    height: auto;
-}
-
-.hero-small .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.hero-small .hero-text h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-.hero-small .hero-text p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-/* Filter Bar */
-.filter-bar {
-    display: flex;
-    justify-content: center;
-    margin: -50px 0 20px 0; /* Add top margin to push the filter bar down */
-}
-
-.filter-bar button {
-    background-color: #003366;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.filter-bar button:hover {
-    background-color: #FF6600;
-}
-
-/* Job Listings */
 .job-listings {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -271,7 +207,7 @@ footer {
 }
 
 .job-card:hover {
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .job-card h3 {
@@ -299,7 +235,7 @@ footer {
     background-color: #E55A00;
 }
 
-
+/* Stories Section */
 #stories {
     margin-top: 60px; /* Pushes the content down */
     padding: 20px;
@@ -341,6 +277,7 @@ footer {
     line-height: 1.4;
 }
 
+/* Application Form Section */
 #apply {
     margin: 60px auto;
     padding: 20px;
@@ -399,11 +336,12 @@ form button:hover {
     margin-left: 10px; /* Move the button slightly to the right */
 }
 
+/* Hero Section - Smaller */
 .hero-small {
     position: relative;
     text-align: center;
     color: white;
-    margin-top: 00px; /* Pushes content down to avoid overlap with the navbar */
+    margin-top: 60px; /* Pushes content down to avoid overlap with the navbar */
 }
 
 .hero-small img {
@@ -429,4 +367,25 @@ form button:hover {
 .hero-small .hero-text p {
     font-size: 1.2em;
     margin-top: 10px;
+}
+
+/* Filter Bar */
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    margin: -50px 0 20px 0; /* Add top margin to push the filter bar down */
+}
+
+.filter-bar button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter-bar button:hover {
+    background-color: #FF6600;
 }
