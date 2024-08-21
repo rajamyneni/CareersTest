@@ -49,7 +49,6 @@ nav {
     margin-right: 80px; /* Add space from the right side */
 }
 
-
 .cta-button:hover {
     background-color: #E55A00;
 }
@@ -109,6 +108,7 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
 .value-item img {
     width: 100%; /* Adjusts the image to the width of the container */
     height: auto; /* Maintains aspect ratio */
@@ -117,10 +117,12 @@ footer {
     margin: 0 auto 10px; /* Centers the image and adds some margin */
     border-radius: 8px; /* Optional: adds rounded corners */
 }
+
 #benefits {
     margin-top: 60px; /* Pushes the text down to avoid overlapping */
     padding: 20px;
 }
+
 .benefit-item img {
     width: 100%;
     height: auto;
@@ -129,22 +131,38 @@ footer {
     margin: 0 auto 10px;
     border-radius: 8px;
 }
+
 .benefits-grid {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .benefit-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    width: 55%; /* Keep the increased size */
+    margin: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #003366;
+    text-align: center;
 }
 
+.benefit-item:nth-child(2),
+.benefit-item:nth-child(4) {
+    align-self: flex-end; /* Aligns the 2nd and 4th boxes to the right */
+    margin-left: auto; /* Pushes the boxes to the right */
+}
+
+
 .benefit-item img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
+    width: 100%; /* Adjusts the image to the width of the container */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 150px; /* Limits the maximum width of the image */
+    display: block;
+    margin: 0 auto 10px; /* Centers the image and adds some margin */
+    border-radius: 8px; /* Optional: adds rounded corners */
 }
 
 .benefit-text {
@@ -158,10 +176,12 @@ footer {
 .benefit-text p {
     margin-top: 5px;
 }
+
 #jobs {
     margin-top: 60px; /* Adjust this value as needed */
     padding: 20px;
 }
+
 /* Hero Section */
 .hero-small {
     position: relative;
@@ -177,7 +197,7 @@ footer {
 
 .hero-small .hero-text {
     position: absolute;
-    top: 500%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -191,7 +211,6 @@ footer {
     justify-content: center;
     margin: 80px 0 20px 0; /* Add top margin to push the filter bar down */
 }
-
 
 .filter-bar button {
     background-color: #003366;
@@ -240,38 +259,48 @@ footer {
     display: inline-block;
     margin-top: 10px;
 }
+
 #stories {
     margin-top: 60px; /* Pushes the content down */
     padding: 20px;
 }
+
 .stories-grid {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .story-item {
-    text-align: center; /* Center align text and image */
-    background-color: white;
+    width: 30%; /* Adjust width to be similar to overview boxes */
+    margin: 10px;
     padding: 20px;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .story-item img {
-    width: 80px; /* Smaller image size */
-    height: 80px;
+    width: 100%; /* Adjusts the image to the width of the container */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 150px; /* Limits the maximum width of the image */
+    display: block;
+    margin: 0 auto 10px; /* Centers the image and adds some margin */
     border-radius: 50%; /* Circular image */
-    margin-bottom: 10px; /* Space between image and text */
 }
 
 .story-item h3 {
-    margin-top: 0;
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
 .story-item p {
+    font-size: 0.95em;
     margin-top: 5px;
+    line-height: 1.4;
 }
+
 #apply {
     margin: 60px auto;
     padding: 20px;
@@ -318,6 +347,7 @@ form button {
 form button:hover {
     background-color: #E55A00;
 }
+
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
