@@ -1,392 +1,304 @@
-/* Global Styles */
+/* General styles */
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F2F2F2;
-    color: #333333;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-/* Navigation */
-nav {
+/* Header */
+header {
+    background-color: #d3e0ff;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #145392;
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-    background-color: white; /* Set the background color to white */
-    padding: 10px; /* Add some padding to the logo */
-    border-radius: 5px; /* Add rounded corners */
-    display: inline-block; /* Ensures the background only covers the logo */
-}
-
-.logo img {
-    height: 50px;
-    display: block;
-}
-
-/* Navigation Links */
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-}
-
-.nav-links li {
+.logo-container {
     margin-right: 20px;
 }
 
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.company-logo {
+    height: 50px;
+    width: auto;
 }
 
-/* CTA Button in Nav */
-.cta-button {
-    background-color: #FF6600;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-right: 00px; /* Add space from the right side */
-}
-
-.cta-button:hover {
-    background-color: #E55A00;
-}
-
-/* Hero Section */
-.hero {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin-top: 60px;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-.hero-text {
-    position: absolute;
-    top: 40%; /* Adjusted to match your request */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.hero-text h1 {
-    font-size: 2.5em;
+header h1 {
     margin: 0;
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
 }
 
-.hero-text p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-/* Values Section */
-.values-grid {
+/* Tabs container */
+.tabs-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 20px 0;
+}
+
+/* Box around tabs */
+.tabs-box {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+}
+
+/* Style the tabs */
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #d3e0ff;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
-.value-item {
-    width: 30%;
-    margin: 10px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
-footer {
-    background-color: #003366;
-    color: white;
-    padding: 20px;
+.tablinks {
+    background-color: #f0f8ff;
+    border: 1px solid #d3e0ff;
+    border-bottom: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 16px;
     text-align: center;
-}
-
-.value-item img {
-    width: 100%; /* Adjusts the image to the width of the container */
-    height: auto; /* Maintains aspect ratio */
-    max-width: 150px; /* Limits the maximum width of the image */
-    display: block;
-    margin: 0 auto 10px; /* Centers the image and adds some margin */
-    border-radius: 8px; /* Adds rounded corners */
-}
-
-/* Benefits Section */
-#benefits {
-    margin-top: 50px; /* Pushes the text down to avoid overlapping */
-    padding: 20px; /* Add padding if needed */
-}
-
-.benefits-grid {
+    flex: 1;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s ease, color 0;
+    background-color: #f0f8ff;
+    border: 1px solid #d3e0ff;
+    border-bottom: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.benefit-item {
-    width: 40%; /* Adjust the width of each benefit item */
-    margin: 20px;
+.tablinks i {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.tablinks span {
+    display: block;
+    font-weight: 500;
+    color: #007bff;
+}
+
+.tablinks:hover, .tablinks.active {
+    background-color: #e6f2ff;
+    color: #0056b3;
+}
+
+.tablinks.active {
+    background-color: #d3e0ff;
+    border-bottom: 2px solid #d3e0ff;
+    color: #333;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
     padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 2px solid #003366;
+    border: 1px solid #d3e0ff;
+    border-top: none;
+    width: 700px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+/* Content wrapper with image background */
+.image-background {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Text highlight over the image */
+.content-text-highlight {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    max-width: 80%;
+    z-index: 1;
+}
+
+.content-text-left {
+    text-align: left;
+}
+
+.content-text-justify {
+    text-align: justify;
+}
+
+/* Text styling */
+.tabcontent h3 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.tabcontent p {
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Employee Stories Styling */
+#employee-stories {
+    max-width: 800px;
+    margin: 40px auto;
     text-align: center;
 }
 
-.benefit-item:nth-child(2),
-.benefit-item:nth-child(4) {
-    align-self: flex-end; /* Aligns the 2nd and 4th boxes to the right */
-    margin-left: auto; /* Pushes the boxes to the right */
+#employee-stories h2 {
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #0056b3;
 }
 
-.benefit-item img {
-    width: 100%;
-    height: auto;
-    max-width: 150px; /* Adjust as needed */
-    display: block;
-    margin: 0 auto 10px;
+.employee-story {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.story-left {
+    float: left;
+    clear: left;
+}
+
+.story-right {
+    float: right;
+    clear: right;
+}
+
+.story-box {
+    background-color: #ffffff;
+    border: 2px solid #d3e0ff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-.benefit-text {
-    flex: 1; /* Ensures the text takes up the remaining space */
+.story-box img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
-.benefit-text h3 {
-    margin: 0;
+.story-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
 }
 
-.benefit-text p {
-    margin-top: 5px;
+/* Clearfix to handle floating elements */
+#employee-stories::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-/* Jobs Section */
-#jobs {
-    margin-top: 60px; /* Adjust this value as needed */
+/* Open Positions Styling */
+#open-positions {
+    background-color: #ffffff;
     padding: 20px;
-}
-
-.job-listings {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.job-card {
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; /* Ensure all content, including the button, is centered */
+    border: 2px solid #d3e0ff;
+    margin: 40px 20px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.job-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.job-card h3 {
-    margin-top: 0;
-    font-size: 1.5em;
-}
-
-.job-card p {
-    margin: 5px 0;
-}
-
-.job-card .cta-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #FF6600;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-left: 65px; /* Center the button */
-}
-
-.job-card .cta-button:hover {
-    background-color: #E55A00;
-}
-
-/* Stories Section */
-#stories {
-    margin-top: 60px; /* Pushes the content down */
-    padding: 20px;
-}
-
-.stories-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.story-item {
-    width: 30%; /* Adjust width to be similar to overview boxes */
-    margin: 10px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.story-item img {
-    width: 100%; /* Adjusts the image to the width of the container */
-    height: auto; /* Maintains aspect ratio */
-    max-width: 150px; /* Limits the maximum width of the image */
-    display: block;
-    margin: 0 auto 10px; /* Centers the image and adds some margin */
-    border-radius: 50%; /* Circular image */
-}
-
-.story-item h3 {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-.story-item p {
-    font-size: 0.95em;
-    margin-top: 5px;
-    line-height: 1.4;
-}
-
-/* Application Form Section */
-#apply {
-    margin: 60px auto;
-    padding: 20px;
-    max-width: 600px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#apply h2 {
-    text-align: center;
+.department {
     margin-bottom: 20px;
 }
 
-form label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
+.department h3 {
+    margin-bottom: 10px;
+    color: #0056b3;
+    font-weight: 700;
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="tel"],
-form input[type="file"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.department ul {
+    list-style: none;
+    padding: 0;
 }
 
-form button {
-    margin-top: 20px;
-    width: 100%;
-    background-color: #FF6600;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.department ul li {
+    margin-bottom: 5px;
 }
 
-form button:hover {
-    background-color: #E55A00;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FF6600;
-    color: white;
+.department ul li a {
     text-decoration: none;
-    border-radius: 2px;
-    margin-top: 5px;
-    margin-left: 10px; /* Move the button slightly to the right */
+    color: #007bff;
 }
 
-/* Hero Section - Smaller */
-.hero-small {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin-top: 60px; /* Pushes content down to avoid overlap with the navbar */
+.department ul li a:hover {
+    text-decoration: underline;
 }
 
-.hero-small img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+    }
 
-.hero-small .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
-}
+    .tablinks {
+        width: 100%;
+        text-align: center;
+    }
 
-.hero-small .hero-text h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
+    .employee-story {
+        width: 100%;
+        float: none;
+        clear: none;
+        margin-bottom: 20px;
+    }
 
-.hero-small .hero-text p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
+    .story-box img {
+        max-width: 100px;
+    }
 
-/* Filter Bar */
-.filter-bar {
-    display: flex;
-    justify-content: center;
-    margin: -50px 0 20px 0; /* Add top margin to push the filter bar down */
-}
-
-.filter-bar button {
-    background-color: #003366;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.filter-bar button:hover {
-    background-color: #FF6600;
+    .department ul li {
+        font-size: 14px;
+    }
 }
