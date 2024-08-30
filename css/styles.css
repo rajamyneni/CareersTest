@@ -275,30 +275,3 @@ header h1 {
 .department ul li a:hover {
     text-decoration: underline;
 }
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .tabs {
-        flex-direction: column;
-    }
-
-    .tablinks {
-        width: 100%;
-        text-align: center;
-    }
-
-    .employee-story {
-        width: 100%;
-        float: none;
-        clear: none;
-        margin-bottom: 20px;
-    }
-
-    .story-box img {
-        max-width: 100px;
-    }
-
-    .department ul li {
-        font-size: 14px;
-    }
-}
