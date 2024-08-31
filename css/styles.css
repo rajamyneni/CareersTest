@@ -17,12 +17,15 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .logo-container {
-    margin-right: 20px;
+    position: absolute;
+    left: 20px;
 }
 
 .company-logo {
@@ -35,11 +38,11 @@ header h1 {
     font-size: 2em;
     font-weight: 700;
     color: #333;
-    text-align: center; /* Center the text */
-    width: 100%; /* Ensure it spans full width */
-    position: absolute; /* Position it absolutely */
+    text-align: center;
+    width: 100%;
+    position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Center it horizontally */
+    transform: translateX(-50%);
 }
 
 /* Tabs container */
